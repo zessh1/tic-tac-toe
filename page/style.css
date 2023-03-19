@@ -1,0 +1,27 @@
+.square {
+  width: 60px;
+  height: 60px;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  cursor:url("../cursor/x-cursor.cur") 16 16,auto;
+  font-size: 30px;
+}
+.square--container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.disable {
+  pointer-events: none;
+}
+body {
+
+}
