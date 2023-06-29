@@ -1,4 +1,3 @@
-
 let turns = true;
 let x_squares = [];
 let o_squares = [];
@@ -63,7 +62,7 @@ function winCheck(player,player_name) {
 }
 
 function scoreUpload(player) {
-    if (player = "player1") {
+    if (player == "player1") {
         player1_score += 1
         player1.innerHTML = player1_score;
     }
@@ -76,6 +75,7 @@ function scoreUpload(player) {
 function resetButton () {
     let disabledSquares = document.getElementsByClassName("square")
     turns = true;
+    cursorChanage(turns)
     x_squares = [];
     o_squares = [];
     for (let i = 0; i < 9; i++) {
